@@ -1,0 +1,10 @@
+spring:
+#  org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration
+  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.241.128:3306/joy
+    username: renming
+    password: Ming
+    type: org.apache.commons.dbcp2.BasicDataSource
+server:
+  port: 8888

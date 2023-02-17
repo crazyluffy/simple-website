@@ -23,7 +23,7 @@
 
       <Col v-if="item" span="4" offset="4">
 <!--        <img :src="item.photo" height="180" width="180">-->
-        <img src="../../images/logo.png" height="180" width="180">
+        <img :src="item.picture" height="180" width="180">
       </Col>
       <Col v-if="item" span="8" style="height: auto;background-color: coral">
         <div style="background-color: brown;display: block">
@@ -80,7 +80,7 @@ export default {
       this.loading = true;
       // todo fetch item detail from backend
       setTimeout(() => {
-        this.item = {id: 1, name: 'item1', count: 100, price: 100,};
+        this.item = {id: 1, name: 'item1', stock: 100, price: 100,};
         this.loading = false;
       }, 1000);
 
